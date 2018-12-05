@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+
+
+/*NAVBAR+HEADER+FOOTER*/
+a{
+    font-weight: 900;
+}
+li>a:hover{
+    background-color: hsla(45,90%,50%,1);
+    border-radius: 2rem;
+}
+header{
+    padding: 3rem;
+    min-height: 40%;
+    background-image:linear-gradient(hsla(35,100%,80%,1), hsla(1,0%,100%,1));
+    display: flex;
+    justify-content: center;
+}
+#navbar{
+    transition: transform 600ms;
+    transform: 0;
+}
+img{
+    height: 12vw;
+    width: 12vw;
+    display: block;
+}
+h1{
+    font-size: 10vw;
+}
+.size-1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.border-3{
+    border-width: 5px !important;
+}
+main{
+    margin-top: 91px;
+}
+@media only screen and (max-width: 1143px){
+    main{
+        margin-top:158px;
+    }
+}
+@media only screen and (max-width: 851px){
+    main{
+        margin-top: 225px;
+    }
+}
+@media only screen and (max-width: 575px){
+    main{
+        margin-top: 198px;
+    }
+}
+@media only screen and (max-width: 471px){
+    main{
+        margin-top: 265px;
+    }
+}
+
+.icons{
+    padding: 5rem;
+}
+a{
+    color:black;
+}
+.b2t{
+    margin-top: 10rem;
+}
+
+/*HOME*/
+.title{
+    padding-top: 20rem;
+    font-family: 'dancing script';
+    font-size: 5rem;
+}
+.toptext1{
+    margin-top: 30rem;
+}
+.toptext2{
+    margin-top: 25rem;
+}
+.toptext3{
+    margin-top: 33rem;
+}
+.toptext4{
+    margin-top: 25rem;
+}
+.me{
+    height: auto;
+    width: 14rem;
+    margin: 0 auto;
+    margin-top: 15rem;
+}
+.thatsme{
+    width: 400px;
+    height: auto;
+    transition: transform 400ms;
+    transform: translateX(25rem);
+    transition-timing-function: cubic-bezier(.27,.74,.15,.81);
+    margin-right: 3rem;
+    margin-top: 5rem;
+}
+.textlink{
+    font-weight:normal;
+    transition: transform;
+}
+.textlink:hover{
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 0px 4px black;
+}
+
+@media only screen and (max-width: 1053px){
+    .title{
+        padding-top: 17rem
+    }
+    .thatsme{
+        width: 200px;
+        margin-top: 10rem;
+    }
+    .me{
+        width: 10rem; 
+        margin-top: 20rem;
+    } 
+    .toptext1{
+    margin-top: 24rem;
+    }
+    .toptext2{
+        margin-top: 28rem;
+    }
+    .toptext3{
+        margin-top: 27rem;
+    }
+    .toptext4{
+        margin-top: 23rem;
+    }
+}
+
+@media only screen and (max-width: 586px){
+    .thatsme{
+        width: 100px;
+        margin-top: 15rem;
+    }
+    .me{
+        width: 8rem; 
+        margin-top: 14rem;
+    }  
+    .toptext1{
+    margin-top: 24rem;
+    }
+    .toptext2{
+        margin-top: 26rem;
+    }
+    .toptext3{
+        margin-top: 22rem;
+    }
+    .toptext4{
+        margin-top: 23rem;
+    }    
+}
+@media only screen and (max-width: 465px){
+    .title{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    .sectitle{
+        font-size: 1rem;
+    }
+    .toptext1{
+    margin-top: 24rem;
+    }
+    .toptext2{
+        margin-top: 20rem;
+    }
+    .toptext3{
+        margin-top: 16rem;
+    }
+    .toptext4{
+        margin-top: 17rem;
+    } 
+}
+
+.indexmain{
+    background: url(http://i64.tinypic.com/2ltinn6.png) no-repeat;
+    background-size: 1500px;
+    height: 3800px;
+}
+
+/*ABOUT*/
+.sp{
+    width: 150px;
+    height: auto;
+}
+
+/*SKILLS*/
+td{
+    background-color: hsla(35,100%,80%,1);
+    padding: 1rem;
+    width: 80%;
+    box-shadow: 5px 5px 10px;
+    text-align: justify;
+}
+td:nth-of-type(odd){
+    border-right: 3px solid black;
+}
+td:nth-of-type(even){
+    border-left: 3px solid black;
+}
+table{
+    width: 80%;
+}
+i{
+    margin: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    tr:nth-of-type(even)>td:nth-of-type(even){
+        border-right: 3px solid black;
+        border-left: none;
+    }
+    tr:nth-of-type(even)>td:nth-of-type(odd){
+        border-left: 3px solid black;
+        border-right: none;
+    }
+    
+}
+
+
+
+
+
+/*PORTFOLIO*/
+
+.cards{
+    width: 80%;
+}
+.card-body{
+    padding: 0rem 0rem;
+}
+.card-img-top{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    height: 50%;
+}
+.porfrow{
+    overflow: hidden;
+    height: 400px;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+
+
+/*CONTACT*/
+.alert{
+    color: red;
+}
+@media only screen and (min-width: 810px){
+    fieldset{
+        width: 50%;
+        padding: 1rem;
+    }
+    fieldset:nth-child(odd){
+        float: left;
+    }
+    button{
+        margin-top: 6rem;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <!--    To ensure proper rendering and touch zooming on mobile devices, add the viewport meta tag, like this:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Your name">
+    <meta name="description" content="Bootstrap Template">
+
+    <title>Bootstrap Assignment</title>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!--    To overwrite the bootstrap default CSS always link your main.css after bootstrap.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- YOUR CONTENT STARTS HERE -->
+<nav class="navbar navbar-expand-sm navbar-light justify-content-end bg-warning fixed-top" id="navbar">
+   <h1 class="display-4 text-dark text-left">Shawn's Bootstrap Assignment</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Brand -->
+<a class="navbar-brand" href="#"></a>
+
+<!-- Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="nav-content">   
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link float-right" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link float-right" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link float-right" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link float-right" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link float-right" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+<header class="text-dark bg-danger">
+    <img class="border border-3 border-warning rounded-circle" src="img/headshot.png">
+    <h1 class="d-flex justify-content-center">Shawn Beaton</h1>
+</header>
+
+<h2 class="text-center size-1 m-0">Contact for Hiring</h2>
+<h4 class="text-center">(Available for co-op placement starting April 2019)</h4>
+<a href="Shawns_Resume.pdf" target="_blank"><button class="mx-auto d-block m-0">My Resume</button></a>
+
+<form id="form" onsubmit="return validateProfile()" name="contact" class="m-4">
+    <fieldset class="form-group">
+        <label for="name">Name</label>
+        <span id="namealert" class="alert"></span>
+        <input type="text" class="form-control" id="name" name="name">
+    </fieldset>
+    
+    <fieldset class="form-group">
+        <label for="email">Email</label>
+    <span id="emailalert" class="alert"></span>
+        <input type="text" class="form-control" id="email" name="email">
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="company">Company</label>
+    <span id="companyalert" class="alert"></span>
+        <input type="text" class="form-control" id="company" name="company">
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="timeframe">Time Frame</label>
+    <span id="timeframealert" class="alert"></span>
+        <input type="text" class="form-control" id="timeframe" name="timeframe">
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="details">Details</label>
+    <span id="detailsalert" class="alert"></span>
+        <textarea type="text" class="form-control" rows="4" id="details" name="details"></textarea>
+    </fieldset>
+    <button  type="submit" onclick="validateProfile()" class="btn btn-secondary">Submit</button>
+    <button type="reset" class="btn btn-secondary">Reset</button>
+</form>
+
+<div class="b2t bg-warning text-center"><a href="contact.html"><i class="fas fa-arrow-circle-up"></i>Back To the Top</a></div>
+<footer>
+    <div class="icons text-center d-flex bg-warning flex-column">
+        <a href="https://https://www.instagram.com/shawnjbeaton"><i class="fab mt-4 fa-2x fa-instagram"> Instagram</i></a>
+        <a href="https://www.twitter.com/shawnjbeaton"><i class="fab fa-2x mt-4 fa-twitter"> Twitter</i></a>
+        <a href="https://www.linkedin.com/in/shawn-beaton-b83958171/"><i class="fab fa-2x mt-4 fa-linkedin"> LinkedIn</i></a>
+    </div>
+</footer>
+
+
+
+
+</main>  
+    
+    <script src="js/scripts.js"></script>
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <script src="js/validate.js"></script>
+    <script src="js/events.js"></script>
+</body>
+
+</html>
