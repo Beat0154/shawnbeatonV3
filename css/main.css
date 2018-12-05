@@ -173,7 +173,7 @@ a{
 @media only screen and (max-width: 465px){
     .title{
         font-size: 3rem;
-        margin-top: 0rem;
+        margin-top: -4rem;
     }
     .sectitle{
         font-size: 1rem;
