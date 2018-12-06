@@ -208,6 +208,28 @@ html,.aboutmain{
     width:100vw;
     overflow-x: hidden;
 }
+.bgy:nth-last-of-type(even){
+    background-color: hsla(45,100%,50%,0.3);
+}
+.bgy{
+    box-shadow: 0px 20px 20px lightgrey;
+    height: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+.paragraph{
+    width: 70vw;
+    margin: auto;
+    padding: 0rem 6rem;
+}
+.image{
+    flex: auto;
+    width: 30vw;
+    height: auto;
+}
+.images2{
+    width: 50%;
+}
 
 /*SKILLS*/
 td{
