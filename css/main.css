@@ -205,7 +205,7 @@ a{
     height: auto;
 }
 html,.aboutmain{
-    max-width:100vw;
+    width:100vw;
     overflow-x: hidden;
 }
 
@@ -255,18 +255,20 @@ i{
     padding: 0rem 0rem;
 }
 .card-img-top{
-    height: 100%;
+    height: 200px;
     margin-top:0rem;
-/*
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
-*/
+    box-shadow: 0px 0px 10px black;
+    border-radius: 1rem;
 }
 .overlay {
     display:inline-block;
     position: relative;
     height: 200px;
-    margin-top:1rem
+    margin-top:1rem;
+    filter: blur(1.5px);
+    border-radius: 1rem;
+
+    
 }
 .overlay:after {
     content:'';
@@ -279,13 +281,25 @@ i{
     position: absolute;
     background: black;
     opacity: 0.5;
+    border-radius: 1rem;
 }
 .overlay:hover:after {
     opacity: 0;
 }
+.overlay:hover{
+    
+    filter: blur(0px)
+}
+.overlayblur{
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 .porfrow{
     overflow: hidden;
-    height: 400px;
+    height: 100%;
     box-shadow: 0px 0px 10px black;
 }
 
