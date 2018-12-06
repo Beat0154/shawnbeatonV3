@@ -204,6 +204,10 @@ a{
     width: 150px;
     height: auto;
 }
+html,.aboutmain{
+    max-width:100vw;
+    overflow-x: hidden;
+}
 
 /*SKILLS*/
 td{
@@ -262,6 +266,7 @@ i{
     display:inline-block;
     position: relative;
     height: 200px;
+    margin-top:1rem
 }
 .overlay:after {
     content:'';
