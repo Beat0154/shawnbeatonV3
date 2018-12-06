@@ -213,7 +213,6 @@ html,.aboutmain{
 td{
     background-color: hsla(35,100%,80%,1);
     padding: 1rem;
-    width: 80%;
     box-shadow: 5px 5px 10px;
     text-align: justify;
 }
@@ -224,7 +223,7 @@ td:nth-of-type(even){
     border-left: 3px solid black;
 }
 table{
-    width: 80%;
+    width: 90%;
 }
 i{
     margin: 0.5rem;
@@ -252,7 +251,8 @@ i{
     width: 80%;
 }
 .card-body{
-    padding: 0rem 0rem;
+    padding: 0rem 0rem 5rem;
+    
 }
 .card-img-top{
     height: 200px;
@@ -300,7 +300,6 @@ i{
 .porfrow{
     overflow: hidden;
     height: 100%;
-    box-shadow: 0px 0px 10px black;
 }
 
 
@@ -309,6 +308,10 @@ i{
 /*CONTACT*/
 .alert{
     color: red;
+    font-size:0.7rem;
+}
+form{
+    width:80%;
 }
 @media only screen and (min-width: 810px){
     fieldset{
@@ -320,6 +323,9 @@ i{
     }
     button{
         margin-top: 6rem;
+    }
+    .alert{
+        font-size:1rem;
     }
 }
 
