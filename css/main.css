@@ -49,8 +49,16 @@ h1{
 main{
     margin-top: 91px;
 }
+#canvas_container {
+    width: 100%;
+    z-index: 0rem;
+    background-color: #ffc107;
+}
 @media only screen and (max-width: 743px){
     main{
+        margin-top:158px;
+    }
+    #canvas_container {
         margin-top:158px;
     }
 }
@@ -58,9 +66,15 @@ main{
     main{
         margin-top: 91px;
     }
+    #canvas_container {
+        margin-top: 91px;
+    }
 }
 @media only screen and (max-width: 445px){
     main{
+        margin-top: 91px;
+    }
+    #canvas_container {
         margin-top: 91px;
     }
 }
@@ -68,9 +82,15 @@ main{
     main{
         margin-top: 101px;
     }
+    #canvas_container {
+        margin-top: 101px;
+    }
 }
 @media only screen and (max-width: 419px){
     main{
+        margin-top: 131px;
+    }
+    #canvas_container {
         margin-top: 131px;
     }
 }
@@ -81,8 +101,20 @@ main{
 a{
     color:black;
 }
+footer>div>a:hover{
+    color:black;
+}
 .b2t{
     margin-top: 10rem;
+}
+.instagram:hover{
+    color: #9b6954;
+}
+.twitter:hover{
+    color: #38A1F3;
+}
+.linkedin:hover{
+    color: #0077B5;
 }
 
 /*HOME*/
@@ -198,11 +230,7 @@ a{
     } 
 }
 
-.indexmain{
-    background: url(http://i65.tinypic.com/ader1u.png) no-repeat;
-    background-size: 1500px;
-    height: 3800px;
-}
+
 
 /*ABOUT*/
 .sp{
