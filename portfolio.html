@@ -17,6 +17,8 @@
     <!--    To overwrite the bootstrap default CSS always link your main.css after bootstrap.min.css-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </head>
 
@@ -64,7 +66,7 @@
 <h4 class="text-center">HTML + CSS Assignments</h4>
 <div class="cards mx-auto">
  <div class="row porfrow d-flex">
-    <div class="card border-0 col-12 col-sm-6 col-lg-3 ">
+    <div class="card card1 border-0 col-12 col-sm-6 col-lg-3 ">
               <a href="https://beat0154.github.io/travel-form/" target="_blank">
                   <div class="overlay">
                       <img class="card-img-top" src="img/travel.png" alt="Card image cap">
@@ -76,7 +78,7 @@
                 
           </div>
     </div>
-    <div class="card border-0 col-12 col-sm-6 col-lg-3 ">
+    <div class="card card2 border-0 col-12 col-sm-6 col-lg-3 ">
           <a href="https://beat0154.github.io/CSS-Assignment1/" target="_blank">
           <div class="overlay">
           <img class="card-img-top" src="img/madnd.png" alt="Card image cap">
@@ -87,7 +89,7 @@
                 <p class="card-text">My Assignment using CSS to recreate a web development website.</p>
           </div>
     </div>
-    <div class="card border-0 col-12 col-sm-6 col-lg-3 ">
+    <div class="card card3 border-0 col-12 col-sm-6 col-lg-3 ">
           <a href="https://beat0154.github.io/Midterm/" target="_blank">
           <div class="overlay">
           <img class="card-img-top" src="img/dogs.png" alt="Card image cap">
@@ -98,7 +100,7 @@
                 <p class="card-text">A website about dogs, showcasing a responsive navbar.</p>
           </div>
     </div>
-    <div class="card border-0 col-12 col-sm-6 col-lg-3 ">
+    <div class="card card4 border-0 col-12 col-sm-6 col-lg-3 ">
           <a href="https://beat0154.github.io/html-css/" target="_blank">
              <div class="overlay">
                  <img class="card-img-top" src="img/htmlcss.png" alt="Card image cap"></div>
@@ -113,9 +115,9 @@
 <h4 class="mt-5 text-center">JavaScript Assignments</h4>
 
  <div class="row porfrow">
-    <div class="card border-0 col-12 col-sm-6 col-lg-3">
+    <div class="card card1 border-0 col-12 col-sm-6 col-lg-3">
           <a href="https://beat0154.github.io/do-for-while-loops/" target="_blank">
-          <div class="overlay">
+          <div class="overlay doforwhile">
           <img class="card-img-top" src="img/loops.png" alt="Card image cap">
               </div>
         </a>
@@ -125,7 +127,7 @@
                 
           </div>
     </div>
-    <div class="card border-0 col-12 col-sm-6 col-lg-3">
+    <div class="card card2 border-0 col-12 col-sm-6 col-lg-3">
           <a href="https://beat0154.github.io/Shopping-cart/" target="_blank">
           <div class="overlay">
           <img class="card-img-top" src="img/cart.png" alt="Card image cap">
@@ -137,7 +139,7 @@
                 
           </div>
     </div>
-    <div class="card border-0 col-12 col-sm-6 col-lg-3">
+    <div class="card card3 border-0 col-12 col-sm-6 col-lg-3">
           <a href="https://beat0154.github.io/jQuery/" target="_blank">
           <div class="overlay">
           <img class="card-img-top" src="img/jquery.png" alt="Card image cap">
@@ -149,7 +151,7 @@
                 
           </div>
     </div>
-    <div class="card border-0 col-12 col-sm-6 col-lg-3">
+    <div class="card card4 border-0 col-12 col-sm-6 col-lg-3">
           <a href="https://beat0154.github.io/Form-Validation/" target="_blank">
           <div class="overlay">
           <img class="card-img-top" src="img/forms.png" alt="Card image cap">
@@ -166,6 +168,13 @@
     
 
 </div>
+<div>
+    <h1 class="text-center size-1">What sets me apart from others?</h1>
+    <p class="text-center w-25 mx-auto">My ravishing good looks</p>
+    
+    
+    <a href="contact.html"><button class="contactme mx-auto d-block">Contact me</button></a>
+</div>
 
 
 <div class="b2t bg-warning text-center"><a href="portfolio.html"><i class="fas fa-arrow-circle-up"></i>Back To the Top</a></div>
@@ -181,13 +190,12 @@
 
 
 </main>  
-    <!-- YOUR CONTENT ENDS HERE -->
-
-
-    <!-- JavaScript: placed at the end of the document so the pages load faster -->
-
-    <!-- jQuery library -->
-    <script src="js/scripts.js"></script>
+    <script>
+ScrollReveal().reveal('.card1',{distance: '200px', opacity: 0});
+ScrollReveal().reveal('.card2', {delay: 100, distance: '200px', opacity: 0});
+ScrollReveal().reveal('.card3', {delay: 200, distance: '200px', opacity: 0});
+ScrollReveal().reveal('.card4', {delay: 300, distance: '200px', opacity: 0});        </script>
+    <script src="js/script.js"></script>
     <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
     <!-- Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "></script>

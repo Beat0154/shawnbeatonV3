@@ -17,6 +17,8 @@
     <!--    To overwrite the bootstrap default CSS always link your main.css after bootstrap.min.css-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </head>
 
@@ -61,41 +63,41 @@
 <h2 class="text-center size-1">Skills</h2>
 <table class="mx-auto">
     <tr class="row">
-        <td class="col-12 col-md-5 mx-auto m-2">
+        <td class="card1 col-12 col-md-5 mx-auto m-2">
             <i class="fab fa-5x fa-html5 float-left"></i>
             <p>HTML5 is the foundation of a website. Having proper knowledge about HTML is very useful for creating websites. I love finding new ways to use HTML to my advantage and design the outcome I want.</p>
         </td>
-        <td class="col-12 col-md-5 mx-auto m-2">
+        <td class="card1 col-12 col-md-5 mx-auto m-2">
             <i class="fab fa-5x fa-css3-alt float-right"></i>
             <p>CSS3 is my favourite part of designing a website because it allows you to use your creativity. There are endless uses for CSS and it can be made even easier by using plug-ins like bootstrap.</p>
         </td>
     </tr>
     <tr class="row">
-        <td class="col-12 col-md-5 mx-auto m-2">
+        <td class="card2 col-12 col-md-5 mx-auto m-2">
             <i class="fab fa-5x fa-js-square float-left float-md-right"></i>
             <p>Javascript is used for making a webpage interactive and dynamic. I love Javascript for its ability to do anything that you want, it is the language with the most possibilities. I can also write in jQuery.</p>
         </td>
-        <td class="col-12 col-md-5 mx-auto m-2">
+        <td class="card2 col-12 col-md-5 mx-auto m-2">
             <i class="fab fa-5x fa-python float-right float-md-left"></i>
             <p>Behind the scenes of a website may lie some heavy coding which can come in the form of a Python function. Creating functions and finding different ways to create loops and programs can be very amusing.</p>
         </td>
     </tr>
     <tr class="row">
-        <td class="col-12 col-md-5 mx-auto m-2">
+        <td class="card3 col-12 col-md-5 mx-auto m-2">
             <i class="fas fa-5x fa-database float-left"></i>
             <p>Databases are really fun to use! creating complex queries is really interesting for me and I love finding new ways to use sub-queries and other features of database querying. I use MySQL workbench and have expirience with the world database and the flight database.</p>
         </td>
-        <td class="col-12 col-md-5 mx-auto m-2">
+        <td class="card3 col-12 col-md-5 mx-auto m-2">
             <i class="fab fa-5x fa-github float-right"></i>
             <p>Whenever I finish an assignment I always upload it to github, even if its not required so that my assignments are always backed up. Github is a great tool for hosting websites.</p>
         </td>
     </tr>
     <tr class="row">
-        <td class="col-12 col-md-5 mx-auto m-2">
+        <td class="card4 col-12 col-md-5 mx-auto m-2">
             <i class="fab fa-5x fa-slack float-left float-md-right"></i>
             <p>While working on college assignments, if I ever got stuck I could reach out to my peers on Slack because our proffesor set up a Slack group for us to talk in.</p>
         </td>
-        <td class="col-12 col-md-5 mx-auto m-2">
+        <td class="card4 col-12 col-md-5 mx-auto m-2">
             <i class="fab fa-5x fa-stack-overflow float-right float-md-left"></i>
             <p>Sometimes when I'm working on an assignment I'll run into a problem I can't figure out. I'll try to figure it out on my own for a little and then go to Stack Overflow to see what others have said on figuring out this problem.</p>
         </td>
@@ -115,12 +117,11 @@
 
 
 </main>  
-    <!-- YOUR CONTENT ENDS HERE -->
-
-
-    <!-- JavaScript: placed at the end of the document so the pages load faster -->
-
-    <!-- jQuery library -->
+    <script>
+ScrollReveal().reveal('.card1',{distance: '200px', opacity: 0});
+ScrollReveal().reveal('.card2', {delay: 100, distance: '200px', opacity: 0});
+ScrollReveal().reveal('.card3', {delay: 200, distance: '200px', opacity: 0});
+ScrollReveal().reveal('.card4', {delay: 300, distance: '200px', opacity: 0});        </script>
     <script src="js/script.js"></script>
     <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
     <!-- Popper -->

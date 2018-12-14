@@ -173,6 +173,4 @@ window.onload = function() {
     }
     text9.hover(hoverfunc,hidefunc)
     text10.hover(hoverfunc,hidefunc)
-    
-    
 }
