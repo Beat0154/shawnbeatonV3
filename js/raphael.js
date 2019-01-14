@@ -25,6 +25,21 @@ window.onload = function() {
     var line14 = main.path("M650,300");
     var text = main.text(500, 0, "Currently in development").attr({'font-size': '50px', opacity: '0'})
     
+    line1.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line2.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line3.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line4.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line5.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line6.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line7.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line8.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line9.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line10.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line11.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line12.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line13.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    line14.attr({stroke: 'gold', 'stroke-width': '3px', 'stroke-linecap': 'round'});
+    
     var animation1 = Raphael.animation({path: [["M",350,200],["L",350,300]]},1000);
     var animation2 = Raphael.animation({path: [["M",500,200],["L",500,300]]},1000);
     var animation3 = Raphael.animation({path: [["M",650,200],["L",650,300]]},1000);
@@ -40,7 +55,6 @@ window.onload = function() {
     var animation13 = Raphael.animation({path: [["M",350,400],["L",410,340]]},1000);
     var animation14 = Raphael.animation({path: [["M",650,300],["L",590,360]]},1000);
     var animation15 = Raphael.animation({opacity: '1',y: 350}, 1000);
-    
     
     line1.animate(animation1);
     line2.animate(animation2);
@@ -65,7 +79,7 @@ window.onload = function() {
 //    divider.attr({fill: "hsla(36,43%,63%,1)", "stroke-width": '5px',stroke: "hsla(40,43%,63%,1)"})
 //    
 //    
-    
+//    
 //    
 //    var title = main.text(510, 220, "Hi, I'm Shawn");
 //    title.attr({'font-size': '30px'});
