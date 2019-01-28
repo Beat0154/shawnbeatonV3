@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 
@@ -24,23 +26,411 @@
             <a class="nav-link float-right" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link float-right" href="skills.html">Skills</a>
+            <a class="nav-link float-right" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link float-right" href="about.html">About</a>
+            <a class="nav-link float-right" href="#about">About</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link float-right" href="portfolio.html">Portfolio</a>
+            <a class="nav-link float-right" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link float-right" href="contact.html">Contact</a>
+            <a class="nav-link float-right" href="#contact">Contact</a>
             </li>
         </ul>
     </div>
 </nav>
    
+<main>
+  <header class="text-dark">
+    <img class="border border-3 border-warning rounded-circle" src="img/headshot.png">
+    <h1 class="d-flex justify-content-center">Shawn Beaton</h1>
+</header>  
+ 
+<h2 class="text-center size-1" id="skills">Skills</h2>
+<table class="mx-auto">
+    <tr class="row">
+        <td class="card1 col-12 col-md-5 mx-auto m-2">
+            <i class="fab fa-5x fa-html5 float-left"></i>
+            <p>HTML5 is the foundation of a website. Having proper knowledge about HTML is very useful for creating websites. I love finding new ways to use HTML to my advantage and design the outcome I want.</p>
+        </td>
+        <td class="card1 col-12 col-md-5 mx-auto m-2">
+            <i class="fab fa-5x fa-css3-alt float-right"></i>
+            <p>CSS3 is my favourite part of designing a website because it allows you to use your creativity. There are endless uses for CSS and it can be made even easier by using plug-ins like bootstrap.</p>
+        </td>
+    </tr>
+    <tr class="row">
+        <td class="card2 col-12 col-md-5 mx-auto m-2">
+            <i class="fab fa-5x fa-js-square float-left float-md-right"></i>
+            <p>Javascript is used for making a webpage interactive and dynamic. I love Javascript for its ability to do anything that you want, it is the language with the most possibilities. I can also write in jQuery.</p>
+        </td>
+        <td class="card2 col-12 col-md-5 mx-auto m-2">
+            <i class="fab fa-5x fa-python float-right float-md-left"></i>
+            <p>Behind the scenes of a website may lie some heavy coding which can come in the form of a Python function. Creating functions and finding different ways to create loops and programs can be very amusing.</p>
+        </td>
+    </tr>
+    <tr class="row">
+        <td class="card3 col-12 col-md-5 mx-auto m-2">
+            <i class="fas fa-5x fa-database float-left"></i>
+            <p>Databases are really fun to use! creating complex queries is really interesting for me and I love finding new ways to use sub-queries and other features of database querying. I use MySQL workbench and have expirience with the world database and the flight database.</p>
+        </td>
+        <td class="card3 col-12 col-md-5 mx-auto m-2">
+            <i class="fab fa-5x fa-github float-right"></i>
+            <p>Whenever I finish an assignment I always upload it to github, even if its not required so that my assignments are always backed up. Github is a great tool for hosting websites.</p>
+        </td>
+    </tr>
+    <tr class="row">
+        <td class="card4 col-12 col-md-5 mx-auto m-2">
+            <i class="fab fa-5x fa-slack float-left float-md-right"></i>
+            <p>While working on college assignments, if I ever got stuck I could reach out to my peers on Slack because our proffesor set up a Slack group for us to talk in.</p>
+        </td>
+        <td class="card4 col-12 col-md-5 mx-auto m-2">
+            <i class="fab fa-5x fa-stack-overflow float-right float-md-left"></i>
+            <p>Sometimes when I'm working on an assignment I'll run into a problem I can't figure out. I'll try to figure it out on my own for a little and then go to Stack Overflow to see what others have said on figuring out this problem.</p>
+        </td>
+    </tr>
+</table>   
    
-    <div id="canvas_container"></div>
+<div class="beige shadow">
+<h2 class="text-center size-1 hello" id="portfolio">Personal Portfolio</h2>
+
+<h4 class="text-center">Client Sites</h4>
+<div class="cards mx-auto">
+ <div class="row porfrow d-flex">
+    <div class="beige card card1 border-0 col-12 col-sm-6 col-lg-3 ">
+              <a href="https://beat0154.github.io/Rideau-Osgoode-Martial-Arts/" target="_blank">
+                  <div class="overlay">
+                      <img class="card-img-top" src="img/karate.png" alt="Card image cap">
+                  </div>
+              </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Rideau Osgoode</h5>
+                <p class="card-text">A website for my dad's Karate club.</p>
+                
+          </div>
+    </div>
+    <div class="beige card card2 border-0 col-12 col-sm-6 col-lg-3 ">
+          <a href="https://beat0154.github.io/Alexa-Taylor/" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/taylor.png" alt="Card image cap">
+          </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Student Portfolio</h5>
+                <p class="card-text">A portfolio of a student's projects and the different skills they have.</p>
+          </div>
+    </div>
+    <div class="beige card card3 border-0 col-12 col-sm-6 col-lg-3 ">
+          <a href="#" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/comingsoon.jpg" alt="Card image cap">
+          </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Coming Soon</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+          </div>
+    </div>
+    <div class="beige card card4 border-0 col-12 col-sm-6 col-lg-3 ">
+          <a href="#" target="_blank">
+             <div class="overlay">
+                 <img class="card-img-top" src="img/comingsoon.jpg" alt="Card image cap"></div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Coming Soon</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+    </div>
+</div>
+</div>
+    </div>
+<h4 class="mt-5 text-center">Raphael.js SVG Projects</h4>
+<div class="cards mx-auto">
+ <div class="row porfrow">
+    <div class="card card1 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="clock.html" target="_blank">
+          <div class="overlay doforwhile">
+          <img class="card-img-top" src="img/clock.png" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Clock</h5>
+                <p class="card-text">A realtime anolog clock created completely from scratch using raphael.js</p>
+                
+          </div>
+    </div>
+    <div class="card card2 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="bounce.html" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/ball.png" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Bouncing cube</h5>
+                <p class="card-text">Simple boucing cube animation created using raphael.js</p>
+                
+          </div>
+    </div>
+    <div class="card card3 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="drum.html" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/drum.png" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Drum</h5>
+                <p class="card-text">A playable drumset created using raphael.js</p>
+                
+          </div>
+    </div>
+    <div class="card card4 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="#" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/comingsoon.jpg" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Coming Soon</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+    </div>
+    </div>  
+    
+ </div>
+<div class="beige shadow">
+<h2 class="text-center size-1 hello">College Portfolio</h2>
+
+<h4 class="text-center">HTML + CSS Assignments</h4>
+<div class="cards mx-auto">
+ <div class="row porfrow d-flex">
+    <div class="beige card card1 border-0 col-12 col-sm-6 col-lg-3 ">
+              <a href="https://beat0154.github.io/travel-form/" target="_blank">
+                  <div class="overlay">
+                      <img class="card-img-top" src="img/travel.png" alt="Card image cap">
+                  </div>
+              </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Travel Form</h5>
+                <p class="card-text">A responsive form using media queries for an Airbnb for dogs.</p>
+                
+          </div>
+    </div>
+    <div class="beige card card2 border-0 col-12 col-sm-6 col-lg-3 ">
+          <a href="https://beat0154.github.io/CSS-Assignment1/" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/madnd.png" alt="Card image cap">
+          </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">CSS Assignment</h5>
+                <p class="card-text">My Assignment using CSS to recreate a web development website.</p>
+          </div>
+    </div>
+    <div class="beige card card3 border-0 col-12 col-sm-6 col-lg-3 ">
+          <a href="https://beat0154.github.io/Midterm/" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/dogs.png" alt="Card image cap">
+          </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Midterm</h5>
+                <p class="card-text">A website about dogs, showcasing a responsive navbar.</p>
+          </div>
+    </div>
+    <div class="beige card card4 border-0 col-12 col-sm-6 col-lg-3 ">
+          <a href="https://beat0154.github.io/html-css/" target="_blank">
+             <div class="overlay">
+                 <img class="card-img-top" src="img/htmlcss.png" alt="Card image cap"></div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">HTML+CSS</h5>
+                <p class="card-text">My first website created from scratch using html5 and css3.</p>
+          </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<h4 class="mt-5 text-center">JavaScript Assignments</h4>
+<div class="cards mx-auto">
+ <div class="row porfrow">
+    <div class="card card1 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="https://beat0154.github.io/do-for-while-loops/" target="_blank">
+          <div class="overlay doforwhile">
+          <img class="card-img-top" src="img/loops.png" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Do, While, &amp; For</h5>
+                <p class="card-text">Some examples of do loops, do while loops and for loops.</p>
+                
+          </div>
+    </div>
+    <div class="card card2 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="https://beat0154.github.io/Shopping-cart/" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/cart.png" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Shopping Cart</h5>
+                <p class="card-text">A shopping cart, total number of items and total price.</p>
+                
+          </div>
+    </div>
+    <div class="card card3 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="https://beat0154.github.io/jQuery/" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/jquery.png" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">jQuery Assignment</h5>
+                <p class="card-text">A reactive webpage demonstrating my jQuery abilities</p>
+                
+          </div>
+    </div>
+    <div class="card card4 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="https://beat0154.github.io/Form-Validation/" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/forms.png" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Form Validation</h5>
+                <p class="card-text">A form that displays an error message if theres missing information.</p>
+          </div>
+    </div>
+        </div>
+    </div>
+    <div class="beige shadow">
+    <h4 class="text-center pt-4">Photoshop Artwork</h4>
+<div class="cards mx-auto">
+ <div class="row porfrow d-flex">
+    <div class="beige card card1 border-0 col-12 col-sm-6 col-lg-3 ">
+              <a href="" target="_blank">
+                  <div class="overlay">
+                      <img class="card-img-top" src="img/logos/sens%20logo1.jpg" alt="Card image cap">
+                  </div>
+              </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Ottawa Senators</h5>
+                <p class="card-text">A website for my dad's Karate club.</p>
+                
+          </div>
+    </div>
+    <div class="beige card card2 border-0 col-12 col-sm-6 col-lg-3 ">
+          <a href="" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/logos/avalanche%20logo1.jpg" alt="Card image cap">
+          </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Coming Soon</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+    </div>
+    <div class="beige card card3 border-0 col-12 col-sm-6 col-lg-3 ">
+          <a href="#" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/comingsoon.jpg" alt="Card image cap">
+          </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Coming Soon</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+          </div>
+    </div>
+    <div class="beige card card4 border-0 col-12 col-sm-6 col-lg-3 ">
+          <a href="#" target="_blank">
+             <div class="overlay">
+                 <img class="card-img-top" src="img/comingsoon.jpg" alt="Card image cap"></div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Coming Soon</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+    </div>
+</div>
+</div>
+    </div>
+    
+    
+    
+   <h2 class="text-center size-1 about" id="about">About Me</h2>
+
+<div class="section">
+    <div class="row bgy">
+        <p class="paragraph text-center h4 font-weight-normal">My name is Shawn Beaton. I grew up in Greely, a small village outside of the Capital of Canada. I was always a happy kid, I loved attention and loved making others happy.</p>
+        <img class="image" src="img/young.png" alt="younger me">
+    </div>
+    <div class="row bgy">
+            <img class="image" src="img/jets.png" alt="hockey">
+            <p class="paragraph text-center h4 font-weight-normal">When I turned 5 I began playing hockey and fell in love with the greatest sport on Earth. I played defence growing up and was good enough to make it onto competitive teams. I won two championships with the Gloucester Rangers and played a total of 5 years for them. Now I play juvenile for the Metcalfe Jets and love watching NHL Hockey. My favourite team is the Ottawa Senators but I also like the Toronto Maple Leafs and the Tampa Bay Lightning.</p>
+    </div>
+    <div class="row bgy">
+        <p class="paragraph text-center h4 font-weight-normal">I graduated in 2017 from Osgoode Township Highschool. It was a small town and everyone knew everyone at that school. I had a lot of fun during my 4 years.</p>
+        <img class="image" src="img/grad.png" alt="graduation">
+    </div>
+    <div class="row bgy">
+        <img class="image" src="img/kiss.png" alt="kiss">
+        <p class="paragraph text-center h4 font-weight-normal">A year and 8 months ago I fell in love with the most beautiful girl who would change my life forever. Her name is Meghann, she is my everything, the one I think about all day long and the one who keeps my sanity in check. She would do anything for me and I would do anything for her.</p>
+    </div>
+    <div class="row bgy">
+        <p class="paragraph text-center h4 font-weight-normal">Fishing is my favourite pastime. It's so much fun to do. There's no better feeling than catching a really heavy, big fish. </p>
+        <img class="image" src="img/fish.png" alt="fishing">
+    </div>
+    <div class="row bgy">
+        <img class="image" src="img/lax.png" alt="lacrosse">
+        <p class="paragraph text-center h4 font-weight-normal">Growing up playing hockey, a lot of my buddies played lacrosse, but I didn't. I was always interested but never tried it until highschool in grade 11. From my first game I played I fell in love with the sport. I played with my highschool team to win the city championship twice. Now I play in a summer league and have a lot of good times.</p>
+    </div>
+    <div class="row bgy">
+        <p class="paragraph text-center h4 font-weight-normal">This is a picture of Meg and I on our first roadtrip to Toronto. We went to the CN Tower, Ripley's Aquarium, and Wonderland.</p>
+        <img class="image" src="img/cntower.png" alt="cn tower">
+    </div>
+    
+    
+</div>
+    
+<div class="form">   
+<h2 class="text-center size-1 m-0" id="contact">Contact for Hiring</h2>
+<h4 class="text-center">(Available for co-op placement starting April 2019)</h4>
+<a href="Shawns_Resume.pdf" target="_blank"><button class="mx-auto d-block m-0">My Resume</button></a>
+
+<!--<img class="graph" src="img/graph.png">-->
+
+<form id="form" onsubmit="return validateProfile()" name="contact" class="mx-auto">
+    <fieldset class="form-group">
+        <label for="name">Name</label>
+        <span id="namealert" class="alert"></span>
+        <input type="text" class="form-control" id="name" name="name">
+    </fieldset>
+    
+    <fieldset class="form-group">
+        <label for="email">Email</label>
+    <span id="emailalert" class="alert"></span>
+        <input type="text" class="form-control" id="email" name="email">
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="company">Company</label>
+    <span id="companyalert" class="alert"></span>
+        <input type="text" class="form-control" id="company" name="company">
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="timeframe">Time Frame</label>
+    <span id="timeframealert" class="alert"></span>
+        <input type="text" class="form-control" id="timeframe" name="timeframe">
+    </fieldset>
+    <fieldset class="form-group">
+        <label for="details">Details</label>
+    <span id="detailsalert" class="alert"></span>
+        <textarea type="text" class="form-control" rows="4" id="details" name="details"></textarea>
+    </fieldset>
+    <button  type="submit" onclick="validateProfile()" class="btn btn-secondary">Submit</button>
+    <button type="reset" class="btn btn-secondary">Reset</button>
+</form>
+</div>     
+</main>
 
 <div class="b2t bg-warning text-center m-0"><a href="index.html"><i class="fas fa-arrow-circle-up"></i>Back To the Top</a></div>
 <footer>
@@ -50,7 +440,11 @@
         <a href="https://www.linkedin.com/in/shawn-beaton-b83958171/"><i class="linkedin fab fa-2x mt-4 fa-linkedin"> LinkedIn</i></a>
     </div>
 </footer>
-   
+    <script>
+ScrollReveal().reveal('.card1',{distance: '200px', opacity: 0});
+ScrollReveal().reveal('.card2', {delay: 100, distance: '200px', opacity: 0});
+ScrollReveal().reveal('.card3', {delay: 200, distance: '200px', opacity: 0});
+ScrollReveal().reveal('.card4', {delay: 300, distance: '200px', opacity: 0});        </script>
     <script src="js/raphael.js"></script>
     <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
     <!-- Popper -->

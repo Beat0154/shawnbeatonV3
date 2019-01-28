@@ -21,7 +21,7 @@ header{
     justify-content: center;
 }
 #navbar{
-    position:fixed;
+    position: absolute;;
     top: 0rem;
     transition: transform 0.3s;
     z-index: 15;
@@ -246,6 +246,10 @@ html,.aboutmain{
     width:100vw;
     overflow-x: hidden;
 }
+.about{
+    margin: 3rem !important;
+    
+}
 .bgy:nth-last-of-type(even){
     background-color: hsla(45,100%,50%,0.3);
 }
@@ -283,19 +287,20 @@ html,.aboutmain{
 
 /*SKILLS*/
 td{
-    background-color: hsla(45,100%,50%,0.3);
+    background-color: hsla(45,100%,85%,1);
     padding: 1rem;
     box-shadow: 5px 5px 10px;
     text-align: justify;
 }
 td:nth-of-type(odd){
-    border-right: 10px solid hsla(45,100%,51.4%,0.3);
+    border-right: 10px solid hsla(45,100%,85%,1);
 }
 td:nth-of-type(even){
-    border-left: 10px solid hsla(45,100%,51.4%,0.3);
+    border-left: 10px solid hsla(45,100%,85%,1);
 }
 table{
     width: 90%;
+    margin-bottom: 3rem;
 }
 i{
     margin: 0.5rem;
@@ -303,11 +308,11 @@ i{
 
 @media only screen and (min-width: 768px) {
     tr:nth-of-type(even)>td:nth-of-type(even){
-        border-right: 10px solid hsla(45,100%,51.4%,0.3);
+        border-right: 10px solid hsla(45,100%,85%,1);
         border-left: none;
     }
     tr:nth-of-type(even)>td:nth-of-type(odd){
-        border-left: 10px solid hsla(45,100%,51.4%,0.3);
+        border-left: 10px solid hsla(45,100%,85%,1);
         border-right: none;
     }
     
@@ -324,6 +329,14 @@ i{
 }
 .card-body{
     padding: 0rem 0rem 5rem;
+    
+}
+.hello{
+    padding-top: 3rem;
+    margin-top: 0rem;
+}
+.beige{
+    background-color: hsla(45,100%,85%,1);
     
 }
 .card-img-top{
@@ -366,6 +379,9 @@ i{
     overflow: hidden;
     height: 100%;
 }
+.shadow{
+    box-shadow: 0px 5px 10px darkgrey, inset 0px 35px 20px -30px darkgrey;
+}
 @media only screen and (max-width: 575px){
     .overlay:after{
         opacity:0;
@@ -403,6 +419,11 @@ i{
 }
 form{
     width:80%;
+    padding-bottom: 8rem;
+}
+.form{
+    background-color: hsla(45,100%,50%,0.3);
+    padding-top: 3rem;
 }
 .graph{
     visibility: hidden;
