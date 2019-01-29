@@ -17,7 +17,8 @@
 <body>
 
 <nav class="navbar navbar-expand-sm navbar-light justify-content-end bg-warning w-100" id="navbar">
-   <h1 class="display-4 text-dark text-left navtext">Shawn Beaton</h1>
+<!--   <h1 class="display-4 text-dark text-left navtext">Shawn Beaton</h1>-->
+   <a href="index.html"><img class="navimg" src="img/shawnbeaton.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -365,31 +366,31 @@
    <h2 class="text-center size-1 about" id="about">About Me</h2>
 
 <div class="section">
-    <div class="row bgy">
+    <div class="row card3 bgy">
         <p class="paragraph text-center h4 font-weight-normal">My name is Shawn Beaton. I grew up in Greely, a small village outside of the Capital of Canada. I was always a happy kid, I loved attention and loved making others happy.</p>
         <img class="image" src="img/young.png" alt="younger me">
     </div>
-    <div class="row bgy">
+    <div class="row card3 bgy">
             <img class="image" src="img/jets.png" alt="hockey">
             <p class="paragraph text-center h4 font-weight-normal">When I turned 5 I began playing hockey and fell in love with the greatest sport on Earth. I played defence growing up and was good enough to make it onto competitive teams. I won two championships with the Gloucester Rangers and played a total of 5 years for them. Now I play juvenile for the Metcalfe Jets and love watching NHL Hockey. My favourite team is the Ottawa Senators but I also like the Toronto Maple Leafs and the Tampa Bay Lightning.</p>
     </div>
-    <div class="row bgy">
+    <div class="row card3 bgy">
         <p class="paragraph text-center h4 font-weight-normal">I graduated in 2017 from Osgoode Township Highschool. It was a small town and everyone knew everyone at that school. I had a lot of fun during my 4 years.</p>
         <img class="image" src="img/grad.png" alt="graduation">
     </div>
-    <div class="row bgy">
+    <div class="row card3 bgy">
         <img class="image" src="img/kiss.png" alt="kiss">
         <p class="paragraph text-center h4 font-weight-normal">A year and 8 months ago I fell in love with the most beautiful girl who would change my life forever. Her name is Meghann, she is my everything, the one I think about all day long and the one who keeps my sanity in check. She would do anything for me and I would do anything for her.</p>
     </div>
-    <div class="row bgy">
+    <div class="row card3 bgy">
         <p class="paragraph text-center h4 font-weight-normal">Fishing is my favourite pastime. It's so much fun to do. There's no better feeling than catching a really heavy, big fish. </p>
         <img class="image" src="img/fish.png" alt="fishing">
     </div>
-    <div class="row bgy">
+    <div class="row card3 bgy">
         <img class="image" src="img/lax.png" alt="lacrosse">
         <p class="paragraph text-center h4 font-weight-normal">Growing up playing hockey, a lot of my buddies played lacrosse, but I didn't. I was always interested but never tried it until highschool in grade 11. From my first game I played I fell in love with the sport. I played with my highschool team to win the city championship twice. Now I play in a summer league and have a lot of good times.</p>
     </div>
-    <div class="row bgy">
+    <div class="row card3 bgy">
         <p class="paragraph text-center h4 font-weight-normal">This is a picture of Meg and I on our first roadtrip to Toronto. We went to the CN Tower, Ripley's Aquarium, and Wonderland.</p>
         <img class="image" src="img/cntower.png" alt="cn tower">
     </div>
@@ -397,20 +398,19 @@
     
 </div>
     
-<div class="form">   
+<div class="form card4">   
 <h2 class="text-center size-1 m-0" id="contact">Contact for Hiring</h2>
 <h4 class="text-center">(Available for co-op placement starting April 2019)</h4>
 <a href="Shawns_Resume.pdf" target="_blank"><button class="mx-auto d-block m-0">My Resume</button></a>
 
 <!--<img class="graph" src="img/graph.png">-->
 
-<form id="form" onsubmit="return validateProfile()" name="contact" class="mx-auto">
+<form id="form" action="https://formspree.io/shawnjbeaton@gmail.com" method="POST" onsubmit="return validateProfile()" name="contact" class="mx-auto">
     <fieldset class="form-group">
         <label for="name">Name</label>
         <span id="namealert" class="alert"></span>
         <input type="text" class="form-control" id="name" name="name">
     </fieldset>
-    
     <fieldset class="form-group">
         <label for="email">Email</label>
     <span id="emailalert" class="alert"></span>
@@ -431,7 +431,7 @@
     <span id="detailsalert" class="alert"></span>
         <textarea type="text" class="form-control" rows="4" id="details" name="details"></textarea>
     </fieldset>
-    <button  type="submit" onclick="validateProfile()" class="btn btn-secondary">Submit</button>
+    <button  type="submit" value="send" onclick="validateProfile()" class="btn btn-secondary">Submit</button>
     <button type="reset" class="btn btn-secondary">Reset</button>
 </form>
 </div>     

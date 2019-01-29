@@ -13,7 +13,16 @@ body{
 
 
 
-
+.navimg{
+    height:40px;
+    width: 275px;
+}
+@media only screen and (max-width: 675px) and (min-width: 576px){
+    .navimg{
+        height: 25px;
+        width: 170px;
+    }
+}
 a{
     font-weight: 900;
 }
@@ -63,52 +72,12 @@ h1{
     border-width: 5px !important;
 }
 main{
-    margin-top: 91px;
+    margin-top: 56px;
 }
 #canvas_container {
     width: 100%;
     z-index: 0rem;
     background-color: #ffc107;
-}
-@media only screen and (max-width: 743px){
-    main{
-        margin-top:158px;
-    }
-    #canvas_container {
-        margin-top:158px;
-    }
-}
-@media only screen and (max-width: 575px){
-    main{
-        margin-top: 91px;
-    }
-    #canvas_container {
-        margin-top: 91px;
-    }
-}
-@media only screen and (max-width: 445px){
-    main{
-        margin-top: 91px;
-    }
-    #canvas_container {
-        margin-top: 91px;
-    }
-}
-@media only screen and (max-width: 435px){
-    main{
-        margin-top: 101px;
-    }
-    #canvas_container {
-        margin-top: 101px;
-    }
-}
-@media only screen and (max-width: 419px){
-    main{
-        margin-top: 131px;
-    }
-    #canvas_container {
-        margin-top: 131px;
-    }
 }
 
 .icons{
