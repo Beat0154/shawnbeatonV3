@@ -2,16 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 
 
+
 /*NAVBAR+HEADER+FOOTER*/
+
+
+
+
+
+
+
 a{
     font-weight: 900;
 }
 a:hover{
     text-decoration: none;
-}
-li>a:hover{
-    background-color: hsla(45,90%,50%,1);
-    border-radius: 2rem;
 }
 header{
     padding: 3rem;
@@ -19,6 +23,10 @@ header{
     background-image:linear-gradient(hsla(35,100%,80%,1), hsla(1,0%,100%,1));
     display: flex;
     justify-content: center;
+}
+.navtext{
+    font-weight: 600;
+    text-shadow: 2px 2px 10px white;
 }
 #navbar{
     position: absolute;;
@@ -106,8 +114,17 @@ main{
 a{
     color:black;
 }
+.icons{
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+}
 footer>div>a:hover{
     color:black;
+}
+.linktext{
+    font-size: 2rem;
+    font-weight: 400;
 }
 .b2t{
     margin-top: 10rem;
@@ -293,10 +310,10 @@ td{
     text-align: justify;
 }
 td:nth-of-type(odd){
-    border-right: 10px solid hsla(45,100%,85%,1);
+    border-right: 10px solid hsla(45,100%,55%,1);
 }
 td:nth-of-type(even){
-    border-left: 10px solid hsla(45,100%,85%,1);
+    border-left: 10px solid hsla(45,100%,55%,1);
 }
 table{
     width: 90%;
@@ -308,11 +325,11 @@ i{
 
 @media only screen and (min-width: 768px) {
     tr:nth-of-type(even)>td:nth-of-type(even){
-        border-right: 10px solid hsla(45,100%,85%,1);
+        border-right: 10px solid hsla(45,100%,55%,1);
         border-left: none;
     }
     tr:nth-of-type(even)>td:nth-of-type(odd){
-        border-left: 10px solid hsla(45,100%,85%,1);
+        border-left: 10px solid hsla(45,100%,55%,1);
         border-right: none;
     }
     
