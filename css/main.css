@@ -170,11 +170,15 @@ a:hover > .iconimg{
     width: 12%;
     visibility: hidden;
     color: black;
+    transform: scale(0.6);
+    transition: transform 300ms;
 }
 a:hover > .spantext{
     visibility: visible;
     font-size: 2vw;
     text-shadow: 0px 0px 10px white;
+    transform: scale(1.2);
+    transition: transform 300ms;
 }
 @media only screen and (max-width: 1000px){
     .spantext{
@@ -473,9 +477,12 @@ table{
     width: 90%;
     margin-bottom: 3rem;
 }
-i{
+.skillicon{
     margin: 0.5rem;
+    width: 80px;
+    height: auto;
 }
+
 
 @media only screen and (min-width: 768px) {
     tr:nth-of-type(even)>td:nth-of-type(even){
