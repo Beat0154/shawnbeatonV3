@@ -8,6 +8,11 @@ body{
     overflow-x: hidden;
     width: 100%;
 }
+.navicons{
+    width: 77%;
+    margin: 0 auto;
+}
+
 
 .loader {
   position: fixed;
@@ -151,6 +156,42 @@ body{
         transform: rotate(360deg);
     }
 }
+.spherediv{
+    display: flex;
+}
+.spheretext{
+    width: 50%;
+    margin: 12rem 6rem;
+    color: hsla(45,100%,55%,1);
+    text-shadow: 2px 2px 4px black;
+}
+.spheretext:after{
+    content:" --->"
+}
+.sphere{
+    margin: auto;
+    width: 50%;
+    position: relative;
+}
+@media only screen and (max-width: 1060px){
+    .spherediv{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .spheretext{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+    .spheretext:after{
+    content:""
+}
+    .sphere{
+        width: 480px;
+        margin: 0 auto;
+    }
+}
+
 .iconimg{
     transform: scale(1);
     transition: transform 300ms;
@@ -387,6 +428,9 @@ footer>div>a:hover{
     .toptext4{
         margin-top: 23rem;
     }    
+    .navicons{
+    width: 100%;
+    }
 }
 @media only screen and (max-width: 465px){
     .title{
@@ -595,6 +639,9 @@ table{
     color: red;
     font-size:0.7rem;
 }
+.btn:first-of-type{
+    margin-left: 0rem;
+}
 form{
     width:80%;
     padding-bottom: 8rem;
@@ -616,6 +663,9 @@ form{
     }
     button{
         margin-top: 6rem;
+    }
+    .btn:first-of-type{
+    margin-left: 1rem;
     }
     .alert{
         font-size:1rem;

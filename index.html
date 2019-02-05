@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Shawn Beaton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+    <script src="jquery.svg3dtagcloud.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.svg3dtagcloud.js"></script>
+-->
     <script src="js/navslide.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -12,6 +17,78 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src="js/jquery.svg3dtagcloud.min.js"></script>
+    <script src='js/jquery.svg3dtagcloud.js'></script>
+
+    <script>
+
+    	$( document ).ready( function() {
+
+            var entries = [ 
+                
+                { label: 'Twitter', url: 'http://twitter.com/shawnjbeaton', target: '_blank' },
+                { label: 'Instagram', url: 'http://instagram.com/shawnjbeaton', target: '_blank' },
+                { label: 'LinkedIn', url: 'https://www.linkedin.com/in/shawn-beaton-b83958171/', target: '_blank' },
+                { label: 'Facebook', url: 'http://facebook.com/shawnjbeaton', target: '_blank' },
+                { label: 'HTML', url: '#skills', target: '_top' },
+                { label: 'CSS', url: '#skills', target: '_top' },
+                { label: 'JavaScript', url: '#skills', target: '_top' },
+                { label: 'Portfolio', url: '#portfolio', target: '_top' },
+                { label: 'Contact', url: '#contact', target: '_top' },
+                { label: 'Skills', url: '#skills', target: '_top' },
+                { label: 'Python', url: '#skills', target: '_top' },
+                { label: 'Database', url: '#skills', target: '_top' },
+                { label: 'Photoshop', url: '#skills', target: '_top' },
+                { label: 'Premiere Pro', url: '#skills', target: '_top' },
+                { label: 'After Effects', url: '#skills', target: '_top' },
+                { label: 'Raphael.js', url: '#skills', target: '_top' },
+                { label: 'About Me', url: '#about', target: '_top' }
+
+            ];
+
+            var settings = {
+
+                entries: entries,
+                width: 480,
+                height: 480,
+                radius: '65%',
+                radiusMin: 75,
+                bgDraw: true,
+                bgColor: '#FFFFFF',
+                opacityOver: 1.00,
+                opacityOut: 0.05,
+                opacitySpeed: 6,
+                fov: 800,
+                speed: 1,
+                fontFamily: 'Oswald, Arial, sans-serif',
+                fontSize: '15',
+                fontColor: 'hsla(45,100%,55%,1)',
+                fontWeight: 'bold',//bold
+                fontStyle: 'normal',//italic 
+                fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                fontToUpperCase: true,
+                tooltipFontFamily: 'Oswald, Arial, sans-serif',
+                tooltipFontSize: '11',
+                tooltipFontColor: '#fff',
+                tooltipFontWeight: 'normal',//bold
+                tooltipFontStyle: 'normal',//italic 
+                tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+                tooltipFontToUpperCase: false,
+                tooltipTextAnchor: 'left',
+                tooltipDiffX: 0,
+                tooltipDiffY: 10
+
+            };
+
+            var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+            $( '#holder' ).svg3DTagCloud( settings );
+
+		} );
+        
+    </script>
+
 </head>
 <body>
 <div class="loader">
@@ -50,6 +127,7 @@
         </ul>
     </div>
 </nav>
+
    
 <main>
   <header class="text-dark" id="home">
@@ -57,19 +135,24 @@
     <h1 class="d-flex justify-content-center">Shawn Beaton</h1>
 </header>  
 
-    <ul class="d-flex p-0 flex-row align-center justify-content-around">
+    <ul class="navicons d-flex p-0 flex-row align-center justify-content-around">
         <a href="#home"><img href="#home" class="iconimg" src="img/icons/home.png" alt="homeicon">
         <p class="spantext">Home</p></a>
         
-        <a href="#skills"><img href="#skills" class="iconimg" src="img/icons/skills.png" alt="skillsicon"><span class="spantext">Skills</span></a>
+        <a href="#skills"><img href="#skills" class="iconimg" src="img/icons/skills.png" alt="skillsicon"><p class="spantext">Skills</p></a>
         
-        <a href="#portfolio"><img href="#portfolio" class="iconimg" src="img/icons/portfolio.png" alt="portfolioicon"><span class="spantext">Portfolio</span></a>
+        <a href="#portfolio"><img href="#portfolio" class="iconimg" src="img/icons/portfolio.png" alt="portfolioicon"><p class="spantext">Portfolio</p></a>
         
-        <a href="#about"><img href="#about" class="iconimg" src="img/icons/aboutme.png" alt="aboutmeicon"><span class="spantext">About</span></a>
+        <a href="#about"><img href="#about" class="iconimg" src="img/icons/aboutme.png" alt="aboutmeicon"><p class="spantext">About</p></a>
         
-        <a href="#contact"><img href="#contact" class="iconimg" src="img/icons/contact.png" alt="contacticon"><span class="spantext">Contact</span></a>
+        <a href="#contact"><img href="#contact" class="iconimg" src="img/icons/contact.png" alt="contacticon"><p class="spantext">Contact</p></a>
     </ul>
- 
+<div class="spherediv">
+ <h2 class="spheretext">Welcome to my website, click on a link to learn more about me!</h2>
+ <div class="sphere">
+     <div id='holder'></div>
+ </div>
+</div>
  
 <h2 class="text-center size-1 mt-5" id="skills">Skills</h2>
 <table class="mx-auto">
@@ -458,6 +541,7 @@
 </form>
 </div>     
 </main>
+</div>
 <div class="b2t bg-warning text-center m-0"><a href="#home"><i class="fas fa-arrow-circle-up"></i>Back To the Top</a></div>
 <footer>
     <div class="icons text-center d-flex flex-md-row flex-column bg-warning justify-content-around">
@@ -476,5 +560,7 @@ ScrollReveal().reveal('.card4', {delay: 300, distance: '200px', opacity: 0});   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "></script>
     <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    
+
 </body>
 </html>
