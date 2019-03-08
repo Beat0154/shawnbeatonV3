@@ -495,7 +495,7 @@ html,.aboutmain{
 .image{
     flex: auto;
     width: 30vw;
-    height: auto;
+    height: 100%;
 }
 .images2{
     width: 50%;
