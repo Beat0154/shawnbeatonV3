@@ -321,6 +321,11 @@ main{
 a{
     color:black;
 }
+
+/*FOOTER*/
+footer{
+
+}
 .icons{
     padding: 1rem 0rem 3rem 0rem;
     display: flex;
@@ -494,7 +499,7 @@ html,.aboutmain{
 }
 .image{
     flex: auto;
-    width: 30vw;
+    width: auto;
     height: 100%;
 }
 .images2{
