@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <title>Shawn Beaton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--
-    <script src="jquery.svg3dtagcloud.min.js"></script>
+<!--    <script src="jquery.svg3dtagcloud.min.js"></script>-->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.svg3dtagcloud.js"></script>
--->
+<!--    <script src="js/jquery.svg3dtagcloud.js"></script>-->
     <script src="js/navslide.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -228,7 +226,7 @@
                 <p class="card-text">A portfolio of a student's projects and the different skills they have.</p>
           </div>
     </div>
-    <div class="beige card card3 border-0 col-12 col-sm-6 col-lg-3 ">
+    <div id="jsfix" class="beige card card3 border-0 col-12 col-sm-6 col-lg-3 ">
           <a href="https://beat0154.github.io/Octopus-JR/" target="_blank">
           <div class="overlay">
           <img class="card-img-top" src="img/octopusjr.png" alt="Card image cap">
@@ -239,7 +237,7 @@
                 <p class="card-text">A webpage I created for an iphone game available in the app store.</p>
           </div>
     </div>
-    <div class="beige card card4 border-0 col-12 col-sm-6 col-lg-3 ">
+    <div id="jsfix" class="beige card card4 border-0 col-12 col-sm-6 col-lg-3 ">
           <a href="https://beat0154.github.io/Caleb-Clifford/" target="_blank">
              <div class="overlay">
                  <img class="card-img-top" src="img/caleb.png" alt="Card image cap"></div>
@@ -252,10 +250,21 @@
 </div>
 </div>
     </div>
-<h4 class="mt-5 text-center">Raphael.js SVG Projects</h4>
+<h4 class="mt-5 text-center">SVG and Raphael.js Projects</h4>
 <div class="cards mx-auto">
  <div class="row porfrow">
-    <div class="card card1 border-0 col-12 col-sm-6 col-lg-3">
+       <div id="jsfix" class="card card1 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="https://beat0154.github.io/Lab10SVG/" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/svg.png" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">SVG animations</h5>
+                <p class="card-text">SVG animations triggered by buttons with keyframes and a hover effect from css.</p>
+          </div>
+    </div>
+    <div class="card card2 border-0 col-12 col-sm-6 col-lg-3">
           <a href="clock.html" target="_blank">
           <div class="overlay doforwhile">
           <img class="card-img-top" src="img/clock.png" alt="Card image cap">
@@ -267,7 +276,7 @@
                 
           </div>
     </div>
-    <div class="card card2 border-0 col-12 col-sm-6 col-lg-3">
+    <div class="card card3 border-0 col-12 col-sm-6 col-lg-3">
           <a href="bounce.html" target="_blank">
           <div class="overlay">
           <img class="card-img-top" src="img/ball.png" alt="Card image cap">
@@ -279,7 +288,7 @@
                 
           </div>
     </div>
-    <div class="card card3 border-0 col-12 col-sm-6 col-lg-3">
+    <div id="jsfix" class="card card4 border-0 col-12 col-sm-6 col-lg-3">
           <a href="drum.html" target="_blank">
           <div class="overlay">
           <img class="card-img-top" src="img/drum.png" alt="Card image cap">
@@ -289,17 +298,6 @@
                 <h5 class="card-title mt-3">Drum</h5>
                 <p class="card-text">A playable drumset created using raphael.js</p>
                 
-          </div>
-    </div>
-    <div class="card card4 border-0 col-12 col-sm-6 col-lg-3">
-          <a href="#" target="_blank">
-          <div class="overlay">
-          <img class="card-img-top" src="img/comingsoon.png" alt="Card image cap">
-              </div>
-        </a>
-          <div class="card-body text-center">
-                <h5 class="card-title mt-3">Coming Soon</h5>
-                <p class="card-text"></p>
           </div>
     </div>
     </div>  
@@ -334,7 +332,7 @@
                 <p class="card-text">The Colorado Avalanche logo made completely out of text.</p>
           </div>
     </div>
-    <div class="beige card card3 border-0 col-12 col-sm-6 col-lg-3 ">
+    <div id="jsfix" class="beige card card3 border-0 col-12 col-sm-6 col-lg-3 ">
           <a href="logos.html#lightning" target="_blank">
           <div class="overlay">
           <img class="card-img-top" src="img/logos/lightning%20logo20.png" alt="Card image cap">
@@ -345,7 +343,7 @@
                 <p class="card-text">The Tampa Bay Lightning logo made completely out of text.</p>
           </div>
     </div>
-    <div class="beige card card4 border-0 col-12 col-sm-6 col-lg-3 ">
+    <div id="jsfix" class="beige card card4 border-0 col-12 col-sm-6 col-lg-3 ">
           <a href="logos.html#knights" target="_blank">
              <div class="overlay">
                  <img class="card-img-top" src="img/logos/vegas%20logo20.png" alt="Card image cap"></div>
@@ -599,6 +597,13 @@
         <a class="linkedin" href="https://www.linkedin.com/in/shawn-beaton-b83958171/" target="_blank"><i class="fab fa-2x mt-4 fa-linkedin"></i><span class="linktext">LinkedIn</span></a>
     </div>
 </footer>
+</body>
+    <script>
+       if ($(window).width() < (575px)) {
+            $("#jsfix").removeClass("card3 card4");
+       }
+    
+    </script>
     <script>
 ScrollReveal().reveal('.card1', {distance: '200px', opacity: 0});
 ScrollReveal().reveal('.card2', {delay: 100, distance: '200px', opacity: 0});
@@ -609,7 +614,5 @@ ScrollReveal().reveal('.card4', {delay: 300, distance: '200px', opacity: 0});   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "></script>
     <!-- Latest compiled and minified Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
-    
 
-</body>
 </html>
