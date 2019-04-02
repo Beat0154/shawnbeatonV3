@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <title>Shawn Beaton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <script src="jquery.svg3dtagcloud.min.js"></script>-->
     <script src="js/jquery-3.3.1.min.js"></script>
-<!--    <script src="js/jquery.svg3dtagcloud.js"></script>-->
     <script src="js/navslide.js"></script>
+    <script src="js/validate.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="icon" type="image/png" href="img/shawnbeatonfav.png">
@@ -262,6 +261,17 @@
           <div class="card-body text-center">
                 <h5 class="card-title mt-3">SVG animations</h5>
                 <p class="card-text">SVG animations triggered by buttons with keyframes and a hover effect from css.</p>
+          </div>
+    </div>
+    <div id="jsfix" class="card card1 border-0 col-12 col-sm-6 col-lg-3">
+          <a href="https://beat0154.github.io/tonys-gym/" target="_blank">
+          <div class="overlay">
+          <img class="card-img-top" src="img/tony.png" alt="Card image cap">
+              </div>
+        </a>
+          <div class="card-body text-center">
+                <h5 class="card-title mt-3">Tony's Gym</h5>
+                <p class="card-text">A SVG and javascript project I made for my boss. </p>
           </div>
     </div>
     <div class="card card2 border-0 col-12 col-sm-6 col-lg-3">
@@ -557,7 +567,7 @@
 <h4 class="text-center">(Available for co-op placement starting April 2019)</h4>
 <a href="Shawns_%20Resume.pdf" target="_blank"><button class="mx-auto d-block m-0">My Resume</button></a>
 
-<form id="form" action="https://formspree.io/shawnjbeaton@gmail.com" method="POST" onsubmit="return validateProfile()" name="contact" class="mx-auto">
+<form id="form" onsubmit="validateProfile()" name="contact" class="mx-auto">
     <fieldset class="form-group">
         <label for="name">Name</label>
         <span id="namealert" class="alert"></span>
@@ -583,9 +593,10 @@
     <span id="detailsalert" class="alert"></span>
         <textarea type="text" class="form-control" rows="4" id="details" name="details"></textarea>
     </fieldset>
-    <button  type="submit" value="send" onclick="validateProfile()" class="btn btn-secondary">Submit</button>
+    <button id="submit" class="btn btn-secondary">Submit</button>
     <button type="reset" class="btn btn-secondary">Reset</button>
 </form>
+<!--action="https://formspree.io/shawnjbeaton@gmail.com" method="POST" type="submit" value="send" -->
 </div>     
 </main>
 </div>
@@ -598,12 +609,6 @@
     </div>
 </footer>
 </body>
-    <script>
-       if ($(window).width() < (575px)) {
-            $("#jsfix").removeClass("card3 card4");
-       }
-    
-    </script>
     <script>
 ScrollReveal().reveal('.card1', {distance: '200px', opacity: 0});
 ScrollReveal().reveal('.card2', {delay: 100, distance: '200px', opacity: 0});

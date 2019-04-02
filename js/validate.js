@@ -22,11 +22,11 @@ var validateProfile = function(){
     }
     if(valid){
         
-     document.getElementById("form").action = "https://formspree.io/beat0154@algonquinlive.com";
+     document.getElementById("form").action = "https://formspree.io/shawnjbeaton@gmail.com";
      document.getElementById("form").method = "POST";
         valid = true;
     }
 
-    return valid;
+//    return valid;
 }
-//document.getElementById('submit').addEventListener("click", validateProfile);
+document.getElementById('submit').addEventListener("click", validateProfile);
